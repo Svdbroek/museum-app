@@ -25,6 +25,10 @@ h1{
     margin: 1rem;
 }
 
+.artObject:hover{
+    max-width:200%; 
+}
+
 #gallery {
     display: flex;
     flex-flow: row wrap;
