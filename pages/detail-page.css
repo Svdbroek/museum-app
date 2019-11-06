@@ -23,6 +23,10 @@ body {
     margin: 2rem auto;
   }
 
+  .scaling-container{
+    display: flex;
+  }
+
   img{
       min-width: 700px;
       min-height: auto;
