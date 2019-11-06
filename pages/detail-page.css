@@ -16,7 +16,7 @@ body {
   }
   
   h1 {
-    margin: 5rem 1rem;
+    margin: 2rem 1rem;
   }
   
   h2 {
@@ -25,11 +25,13 @@ body {
 
   .scaling-container{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   img{
-      min-width: 700px;
-      min-height: auto;
+      max-width: 90%;
+      height: auto;
   }
   
   .comment {
@@ -42,7 +44,7 @@ body {
   
   form {
     margin: 2rem auto;
-    width: 50%;
+    max-width: 50%;
     min-width: 15rem;
   
     padding: 1rem;
