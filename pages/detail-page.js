@@ -18,7 +18,7 @@ let submitComment =()=>{
     
     document.getElementById('comments').appendChild(comment) // slaps the fucker into the actual page
     
-    //clearing the fields (clears all fields on page !!!)
-    //inputField.value = null;  this stuff refreshes the page for some reason
-    //textArea.value = null;
+    //clearing the fields
+    inputField.value = null;
+    textField.value = null;
 }
