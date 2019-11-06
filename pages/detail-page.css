@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 2rem 0;
     width: 100%;
-    background: #FFBA00;
+    background: rgb(255,0,0);
+    background: linear-gradient(164deg, rgba(255,0,0,1) 0%, rgba(255,178,0,1) 16%, rgba(58,255,0,1) 30%, rgba(0,238,255,1) 45%, rgba(0,128,255,1) 60%, rgba(207,0,255,1) 75%, rgba(255,0,84,1) 90%, rgba(255,0,0,1) 100%);
     font-family: 'Inconsolata', monospace;
     text-align: center;
   }
