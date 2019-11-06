@@ -1,0 +1,1 @@
+let submitComment =()=>console.log("hello")
