@@ -25,13 +25,13 @@ body {
   }
 
   .scaling-container{
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    margin: 0 10%;
+
   }
 
   img{
-      max-width: 90%;
+      width: 90%;
       height: auto;
   }
   
