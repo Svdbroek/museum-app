@@ -336,7 +336,7 @@ let displayPainting = Painting => {
     imgTag.classList.add('artObject')
     imgTag.alt = String(allPaintings[Painting].title)
 
-    anchorTag.href = './pages/detail-page.html'
+    anchorTag.href = './pages/detail-page.html?painting='+ Painting
 
     anchorTag.appendChild(imgTag)
     document.getElementById('gallery').appendChild(anchorTag)
@@ -352,11 +352,14 @@ for (i = 0; i < allPaintings.length; i++) {
      
         if (img.width < 400) {
         } else if (allPaintings[currentPainting].principalOrFirstMaker.includes('Honthorst')) {
-        } else if (allPaintings[currentPainting].longTitle.match(/(\d+)/)[0] > 1800) {]
+        } else if (allPaintings[currentPainting].longTitle.match(/(\d+)/)[0] > 1800) {
         } else {
+
             displayPainting(currentPainting);
         }
     }
     img.src = allPaintings[currentPainting].webImage.url;
 
 }
+
+
