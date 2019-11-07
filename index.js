@@ -325,26 +325,47 @@ const data = {
 }
 
 
-let gallery = data.artObjects
+let allPaintings = data.artObjects
 
 
 let displayPainting = Painting => {
-
     let anchorTag = document.createElement('a')
     let imgTag = document.createElement('img')
 
-    imgTag.src = String(gallery[Painting].webImage.url);
+    imgTag.src = String(allPaintings[Painting].webImage.url);
     imgTag.classList.add('artObject')
-    imgTag.alt = String(gallery[Painting].title)
+    imgTag.alt = String(allPaintings[Painting].title)
 
     anchorTag.href = './pages/detail-page.html'
 
     anchorTag.appendChild(imgTag)
-    console.log(imgTag)
     document.getElementById('gallery').appendChild(anchorTag)
-}   
+}
 
-for(i=0; i<gallery.length; i++ ){
+for (i = 0; i < allPaintings.length; i++) {
     let currentPainting = i
-    displayPainting(currentPainting);
+    let width = 10
+
+    let img = new Image();
+    img.onload = function () {
+        width = img.width;
+     
+        if (img.width < 400) {
+            console.log(width)
+        } else if (allPaintings[currentPainting].principalOrFirstMaker.includes('Honthorst')) {
+            console.log ('screw honthorst')
+        } else if (allPaintings[currentPainting].longTitle.match(/(\d+)/)[0] > 1800) {
+            console.log (allPaintings[currentPainting].longTitle.match(/(\d+)/))
+
+        } else {
+            displayPainting(currentPainting);
+
+        }
+    }
+    img.src = allPaintings[currentPainting].webImage.url;
+
+
+
+
+
 }
