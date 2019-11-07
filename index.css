@@ -32,6 +32,6 @@ h1{
 #gallery {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-around ;
+    align-items: stretch;
 }

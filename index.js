@@ -349,7 +349,7 @@ for (i = 0; i < allPaintings.length; i++) {
     let img = new Image();
     img.onload = function () {
         width = img.width;
-     
+        console.log(width)
         if (img.width < 400) {
         } else if (allPaintings[currentPainting].principalOrFirstMaker.includes('Honthorst')) {
         } else if (allPaintings[currentPainting].longTitle.match(/(\d+)/)[0] > 1800) {
